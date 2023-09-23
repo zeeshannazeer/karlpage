@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Tailwind-practice </title>
+  <link rel="stylesheet" href="input.css">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Shavian&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,800;1,900&family=Roboto:ital,wght@1,300&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-[#F2F2F2] font-bold pb-10">
+    <div class="  max-w-[360px] px-3 sm:max-w-[640px] md:max-w-[740px] lg:max-w-[900px] xl:max-w-[1100px] mx-auto ">
+      <div class="flex justify-between md:justify-between sm:justify-between  xl:justify-between lg:justify-between   ">
+        <div class="pt-4 cursor-pointer w-4 h-4 sm:w-8 sm:h-8 md:w-14 md:h-12 xl:w-14 xl:h-18 lg:w-16 lg:h-14 ">
+          <svg class=" " viewBox="0 0 76 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M48.4693 0.766998L48.2897 1.02488L23.454 36.7321L48.64 73.8572L48.7048 73.9533L48.7272 73.9861L75.8064 73.8572L56.2789 45.9958L49.2437 35.9586L56.2789 26.0615L74.2591 0.766998L48.4693 0.766998Z"
+              fill="#315864" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.453995 1.025V73.8574H37.5004L12.3144 36.7322L37.1501 1.025L0.453995 1.025Z" fill="#315864" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M48.7048 73.9532L48.64 73.8569L23.4544 36.7319L48.2899 1.0253L48.469 0.766998H74.2594L56.2792 26.0615L49.2439 35.9588L56.2792 45.9956L75.8065 73.8569L48.7273 73.9856L48.7048 73.9532ZM0.453995 73.8569V1.0244H37.1497L12.3142 36.7319L37.5007 73.8569H0.453995Z"
+              fill="#A969B7" />
+          </svg>
+        </div>
+        <div
+          class=" hidden   text-[#555555] sm:flex gap-6  md:gap-4 md:text-[14px] lg:text-[14px] xl:text-[18px] pt-6 cursor-pointer sm:text-[11px] sm:gap-2 ">
+
+          <p class=" font-family: 'Poppins', sans-serif; font-normal ">ABOUT KARL</p>
+          <p class=" font-family: 'Poppins', sans-serif; font-normal">ABOUT YOU</p>
+          <p class=" font-family: 'Poppins', sans-serif; font-normal">PROJECTS</p>
+          <p class=" font-family: 'Poppins', sans-serif; font-normal">PROGRAMS</p>
+          <p class=" font-family: 'Poppins', sans-serif; font-normal">NEWSLETTTER</p>
+          <p class=" font-family: 'Poppins', sans-serif; font-normal">CONTACT</p>
+        </div>
+        <div class=" pt-3 flex justify-end xl:hidden lg:hidden md:hidden sm:hidden">
+
+          <div class="">
+            <button id="mobile-menu-button" class="text-[#515152] cursor-pointer focus:outline-none"
+              onclick="toggleMobileMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+          </div>
+
+
+          <div id="mobile-menu" class="hidden sm:hidden">
+            <div class="text-[#515152] flex flex-col gap-2 sm:gap-4 sm:text-[14px] pt-6">
+              <p class="font-family: 'Poppins', sans-serif;">ABOUT KARL</p>
+              <p class="font-family: 'Poppins', sans-serif;">ABOUT YOU</p>
+              <p class="font-family: 'Poppins', sans-serif;">PROJECTS</p>
+              <p class="font-family: 'Poppins', sans-serif;">PROGRAMS</p>
+              <p class="font-family: 'Poppins', sans-serif;">NEWSLETTER</p>
+              <p class="font-family: 'Poppins', sans-serif;">CONTACT</p>
+            </div>
+          </div>
+
+          <script>
+            // JavaScript function to toggle the mobile menu
+            function toggleMobileMenu() {
+              var mobileMenu = document.getElementById("mobile-menu");
+              mobileMenu.classList.toggle("hidden");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <h1 class="flex justify-center text-center font-family: 'Poppins', sans-serif; max-sm:text-4xl sm:text-6xl pt-24 font-bold ">Karl <br>
+      Krummenacher</h1>
+    <h2
+      class="flex justify-center text-center font-family: 'Poppins', sans-serif; max-sm:text-1xl sm:text-2xl text-[#A969B7]  pt-4 font-bold ">
+      BIGGER IMPACT. LESS HUSTLE.</h2>
+
+
+    <div
+      class=" max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center gap-6 lg:flex lg:justify-center lg:pt-32 lg:gap-40 xl:flex  xl:justify-center  xl:pt-32 xl:gap-40    ">
+      <div class=" lg:ml-[150px] xl:ml-[150px]">
+        <h1
+          class="flex  max-sm:w-[300px]  sm:w-[340px] justify-center text-center font-family: 'Poppins', sans-serif;  text-[#555555] max-sm:text-3xl  sm:text-4xl pt-6 font-bold ">
+          Headline Goes Here</h1>
+        <p
+          class=" flex  max-sm:w-[300px]  sm:w-[370px] max-sm:justify-center max-sm:text-center sm:justify-center  font-family: 'Poppins', sans-serif; max-sm:text-[16px] sm:text-[20px] text-[#777777] pt-8 font-medium  ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non venenatis risus, in lacinia odio. Ut
+          iaculis lectus nulla, ac sollicitudin massa efficitur ac. Vestibulum dui metus, sollicitudin ac odio nec,
+          vehicula rhoncus urna.</p>
+      </div>
+      <div >
+        <img src="Group 14.png" alt="" class=" max-sm:w-[300px] sm:w-[470px]  ">
+        <div class=" mt-[-40px] ml-6">
+          <svg width="123" height="76" viewBox="0 0 153 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.439385 18.8217V10.6159C9.38162 10.6159 11.3805 6.30258 13.1689 1.35805H20.9539V75H9.38162V18.8217H0.439385ZM68.9774 19.0321V56.6947C68.9774 69.1086 63.2964 75.8416 51.3033 75.8416C39.9414 75.8416 34.05 69.1086 34.05 57.3259V55.4323H44.9911V58.0624C44.9911 63.3225 47.3056 65.3213 50.9877 65.3213C55.0906 65.3213 57.405 63.3225 57.405 56.2739V42.8079C55.4062 47.0161 51.8293 49.3305 46.6744 49.3305C38.1529 49.3305 33.8396 43.334 33.8396 32.4981V19.0321C33.8396 7.2494 40.0466 0.51643 51.4085 0.51643C62.7704 0.51643 68.9774 7.2494 68.9774 19.0321ZM51.4085 38.8102C55.0906 38.8102 57.405 36.8114 57.405 31.5512V18.2957C57.405 13.0356 55.0906 11.1419 51.4085 11.1419C47.7264 11.1419 45.4119 13.0356 45.4119 18.2957V31.5512C45.4119 36.8114 47.7264 38.8102 51.4085 38.8102ZM111.425 57.3259C111.425 69.1086 105.008 75.8416 93.3302 75.8416C81.6526 75.8416 75.2353 69.1086 75.2353 57.3259V51.5398C75.2353 44.4912 77.3393 39.0206 82.3891 36.1802C77.5497 33.5501 75.2353 28.6056 75.2353 21.3466V19.0321C75.2353 7.2494 81.6526 0.51643 93.3302 0.51643C105.008 0.51643 111.425 7.2494 111.425 19.0321V21.3466C111.425 28.6056 109.005 33.5501 104.271 36.1802C109.321 39.0206 111.425 44.4912 111.425 51.5398V57.3259ZM86.8076 57.0103C86.8076 63.5329 89.6481 65.3213 93.3302 65.3213C97.0122 65.3213 99.7475 63.5329 99.8527 57.0103V50.1721C99.8527 44.386 97.4331 41.8611 93.3302 41.8611C89.2272 41.8611 86.8076 44.386 86.8076 50.1721V57.0103ZM86.8076 19.4529V23.5558C86.8076 29.4472 89.5429 31.3408 93.3302 31.3408C97.0122 31.3408 99.8527 29.4472 99.8527 23.5558V19.4529C99.8527 12.8252 97.0122 11.0367 93.3302 11.0367C89.6481 11.0367 86.8076 12.8252 86.8076 19.4529ZM129.045 18.2957V58.0624C129.045 63.3225 131.359 65.3213 135.041 65.3213C138.724 65.3213 141.038 63.3225 141.038 58.0624V18.2957C141.038 13.0356 138.724 11.0367 135.041 11.0367C131.359 11.0367 129.045 13.0356 129.045 18.2957ZM117.473 57.3259V19.0321C117.473 7.2494 123.68 0.51643 135.041 0.51643C146.403 0.51643 152.61 7.2494 152.61 19.0321V57.3259C152.61 69.1086 146.403 75.8416 135.041 75.8416C123.68 75.8416 117.473 69.1086 117.473 57.3259Z"
+              fill="#A969B7" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div  class=" max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center gap-6 lg:flex lg:justify-center lg:pt-32 lg:gap-40 xl:flex  xl:justify-center  xl:pt-32 xl:gap-40 max-lg:pt-10"   >
+    <div>
+      <img src="Group 14.png" alt="" class=" max-sm:w-[300px] sm:w-[450px]   ">
+      <div class=" mt-[-40px] ml-6">
+        <svg width="123" height="76" viewBox="0 0 153 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.439385 18.8217V10.6159C9.38162 10.6159 11.3805 6.30258 13.1689 1.35805H20.9539V75H9.38162V18.8217H0.439385ZM68.9774 19.0321V56.6947C68.9774 69.1086 63.2964 75.8416 51.3033 75.8416C39.9414 75.8416 34.05 69.1086 34.05 57.3259V55.4323H44.9911V58.0624C44.9911 63.3225 47.3056 65.3213 50.9877 65.3213C55.0906 65.3213 57.405 63.3225 57.405 56.2739V42.8079C55.4062 47.0161 51.8293 49.3305 46.6744 49.3305C38.1529 49.3305 33.8396 43.334 33.8396 32.4981V19.0321C33.8396 7.2494 40.0466 0.51643 51.4085 0.51643C62.7704 0.51643 68.9774 7.2494 68.9774 19.0321ZM51.4085 38.8102C55.0906 38.8102 57.405 36.8114 57.405 31.5512V18.2957C57.405 13.0356 55.0906 11.1419 51.4085 11.1419C47.7264 11.1419 45.4119 13.0356 45.4119 18.2957V31.5512C45.4119 36.8114 47.7264 38.8102 51.4085 38.8102ZM110.689 19.0321V56.6947C110.689 69.1086 105.008 75.8416 93.0145 75.8416C81.6526 75.8416 75.7613 69.1086 75.7613 57.3259V55.4323H86.7024V58.0624C86.7024 63.3225 89.0168 65.3213 92.6989 65.3213C96.8018 65.3213 99.1163 63.3225 99.1163 56.2739V42.8079C97.1175 47.0161 93.5406 49.3305 88.3856 49.3305C79.8642 49.3305 75.5509 43.334 75.5509 32.4981V19.0321C75.5509 7.2494 81.7578 0.51643 93.1197 0.51643C104.482 0.51643 110.689 7.2494 110.689 19.0321ZM93.1197 38.8102C96.8018 38.8102 99.1163 36.8114 99.1163 31.5512V18.2957C99.1163 13.0356 96.8018 11.1419 93.1197 11.1419C89.4376 11.1419 87.1232 13.0356 87.1232 18.2957V31.5512C87.1232 36.8114 89.4376 38.8102 93.1197 38.8102ZM129.045 18.2957V58.0624C129.045 63.3225 131.359 65.3213 135.041 65.3213C138.724 65.3213 141.038 63.3225 141.038 58.0624V18.2957C141.038 13.0356 138.724 11.0367 135.041 11.0367C131.359 11.0367 129.045 13.0356 129.045 18.2957ZM117.473 57.3259V19.0321C117.473 7.2494 123.68 0.51643 135.041 0.51643C146.403 0.51643 152.61 7.2494 152.61 19.0321V57.3259C152.61 69.1086 146.403 75.8416 135.041 75.8416C123.68 75.8416 117.473 69.1086 117.473 57.3259Z"
+            fill="#A969B7" />
+        </svg>
+      </div>
+    </div>
+    <div class="absolute ml-20 mt-[-483px] max-lg:hidden ">
+      <svg width="2" height="2381" viewBox="0 0 2 2491" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.321569" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2491H0V0Z" fill="#A9A9A9" />
+      </svg>
+      <div class="absolute mt-[-2270px] ml-[-6px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z"
+            fill="#A969B7" />
+        </svg>
+      </div>
+      <div class="absolute mt-[-1750px] ml-[-6px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z"
+            fill="#A969B7" />
+        </svg>
+      </div>
+      <div class="absolute mt-[-1310px] ml-[-6px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z"
+            fill="#A969B7" />
+        </svg>
+      </div>
+      <div class="absolute mt-[-855px] ml-[-6px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z"
+            fill="#A969B7" />
+        </svg>
+      </div>
+      <div class="absolute mt-[-400px] ml-[-6px]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z"
+            fill="#A969B7" />
+        </svg>
+      </div>
+
+    </div>
+    <div>
+      <h1
+      class="flex  max-sm:w-[300px]  sm:w-[340px] justify-center text-center font-family: 'Poppins', sans-serif;  text-[#555555] max-sm:text-3xl  sm:text-4xl pt-6 font-bold ">
+        Headline Goes Here</h1>
+      <p
+      class=" flex  max-sm:w-[300px]  sm:w-[360px] max-sm:justify-center max-sm:text-center sm:justify-center  font-family: 'Poppins', sans-serif; max-sm:text-[16px] sm:text-[20px] text-[#777777] pt-8 font-medium ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non venenatis risus, in lacinia odio. Ut
+        iaculis lectus nulla, ac sollicitudin massa efficitur ac. Vestibulum dui metus, sollicitudin ac odio nec,
+        vehicula rhoncus urna.</p>
+    </div>
+  </div>
+  <div class=" max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center gap-6 lg:flex lg:justify-center lg:pt-32 lg:gap-40 xl:flex  xl:justify-center  xl:pt-32 xl:gap-40 max-lg:pt-10" >
+    <div class="lg:ml-[120px] pl:[120px]">
+      <h1
+      class="flex  max-sm:w-[300px]  sm:w-[340px] justify-center text-center font-family: 'Poppins', sans-serif;  text-[#555555] max-sm:text-3xl  sm:text-4xl pt-6 font-bold ">
+        Headline Goes Here</h1>
+      <p
+      class=" flex  max-sm:w-[300px]  sm:w-[370px] max-sm:justify-center max-sm:text-center sm:justify-center  font-family: 'Poppins', sans-serif; max-sm:text-[16px] sm:text-[20px] text-[#777777] pt-8 font-medium ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non venenatis risus, in lacinia odio. Ut
+        iaculis lectus nulla, ac sollicitudin massa efficitur ac. Vestibulum dui metus, sollicitudin ac odio nec,
+        vehicula rhoncus urna.</p>
+    </div>
+    <div >
+      <img src="Group 14 copy 2.png" alt="" class=" max-sm:w-[300px] sm:w-[450px]  ">
+      <div class=" mt-[-40px] ml-6">
+        <svg width="123" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.2198 19.4529C23.2198 12.8252 20.9053 11.0367 17.2232 11.0367C13.5411 11.0367 11.2267 13.0356 11.2267 18.2957V26.1859H0.285596V19.0321C0.285596 7.2494 6.17695 0.51643 17.5389 0.51643C28.9008 0.51643 34.7921 7.2494 34.7921 19.0321C34.7921 42.1767 11.7527 50.8034 11.7527 62.9017C11.7527 63.4277 11.7527 63.9537 11.8579 64.4797H33.7401V75H0.285596V65.9526C0.285596 44.2808 23.2198 40.7039 23.2198 19.4529ZM52.6223 18.2957V58.0624C52.6223 63.3225 54.9368 65.3213 58.6189 65.3213C62.301 65.3213 64.6155 63.3225 64.6155 58.0624V18.2957C64.6155 13.0356 62.301 11.0367 58.6189 11.0367C54.9368 11.0367 52.6223 13.0356 52.6223 18.2957ZM41.05 57.3259V19.0321C41.05 7.2494 47.257 0.51643 58.6189 0.51643C69.9808 0.51643 76.1878 7.2494 76.1878 19.0321V57.3259C76.1878 69.1086 69.9808 75.8416 58.6189 75.8416C47.257 75.8416 41.05 69.1086 41.05 57.3259ZM94.3336 18.2957V58.0624C94.3336 63.3225 96.6481 65.3213 100.33 65.3213C104.012 65.3213 106.327 63.3225 106.327 58.0624V18.2957C106.327 13.0356 104.012 11.0367 100.33 11.0367C96.6481 11.0367 94.3336 13.0356 94.3336 18.2957ZM82.7613 57.3259V19.0321C82.7613 7.2494 88.9683 0.51643 100.33 0.51643C111.692 0.51643 117.899 7.2494 117.899 19.0321V57.3259C117.899 69.1086 111.692 75.8416 100.33 75.8416C88.9683 75.8416 82.7613 69.1086 82.7613 57.3259ZM136.045 18.2957V58.0624C136.045 63.3225 138.359 65.3213 142.041 65.3213C145.724 65.3213 148.038 63.3225 148.038 58.0624V18.2957C148.038 13.0356 145.724 11.0367 142.041 11.0367C138.359 11.0367 136.045 13.0356 136.045 18.2957ZM124.473 57.3259V19.0321C124.473 7.2494 130.68 0.51643 142.041 0.51643C153.403 0.51643 159.61 7.2494 159.61 19.0321V57.3259C159.61 69.1086 153.403 75.8416 142.041 75.8416C130.68 75.8416 124.473 69.1086 124.473 57.3259Z"
+            fill="#A969B7" />
+        </svg>
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center gap-6 lg:flex lg:justify-center lg:pt-32 lg:gap-40 xl:flex  xl:justify-center  xl:pt-32 xl:gap-40 max-lg:pt-10" >
+
+    <div>
+      <img src="Rectangle 9.png" alt="" class=" max-sm:w-[300px] sm:w-[450px]  ">
+      <div class=" mt-[-40px] ml-6">
+        <svg width="123" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.2198 19.4529C23.2198 12.8252 20.9053 11.0367 17.2232 11.0367C13.5411 11.0367 11.2267 13.0356 11.2267 18.2957V26.1859H0.285596V19.0321C0.285596 7.2494 6.17695 0.51643 17.5389 0.51643C28.9008 0.51643 34.7921 7.2494 34.7921 19.0321C34.7921 42.1767 11.7527 50.8034 11.7527 62.9017C11.7527 63.4277 11.7527 63.9537 11.8579 64.4797H33.7401V75H0.285596V65.9526C0.285596 44.2808 23.2198 40.7039 23.2198 19.4529ZM52.6223 18.2957V58.0624C52.6223 63.3225 54.9368 65.3213 58.6189 65.3213C62.301 65.3213 64.6155 63.3225 64.6155 58.0624V18.2957C64.6155 13.0356 62.301 11.0367 58.6189 11.0367C54.9368 11.0367 52.6223 13.0356 52.6223 18.2957ZM41.05 57.3259V19.0321C41.05 7.2494 47.257 0.51643 58.6189 0.51643C69.9808 0.51643 76.1878 7.2494 76.1878 19.0321V57.3259C76.1878 69.1086 69.9808 75.8416 58.6189 75.8416C47.257 75.8416 41.05 69.1086 41.05 57.3259ZM90.8619 18.8217V10.6159C99.8041 10.6159 101.803 6.30258 103.591 1.35805H111.376V75H99.8041V18.8217H90.8619ZM136.045 18.2957V58.0624C136.045 63.3225 138.359 65.3213 142.041 65.3213C145.724 65.3213 148.038 63.3225 148.038 58.0624V18.2957C148.038 13.0356 145.724 11.0367 142.041 11.0367C138.359 11.0367 136.045 13.0356 136.045 18.2957ZM124.473 57.3259V19.0321C124.473 7.2494 130.68 0.51643 142.041 0.51643C153.403 0.51643 159.61 7.2494 159.61 19.0321V57.3259C159.61 69.1086 153.403 75.8416 142.041 75.8416C130.68 75.8416 124.473 69.1086 124.473 57.3259Z"
+            fill="#A969B7" />
+        </svg>
+
+      </div>
+    </div>
+    <div >
+      <h1
+      class="flex  max-sm:w-[300px]  sm:w-[340px] justify-center text-center font-family: 'Poppins', sans-serif;  text-[#555555] max-sm:text-3xl  sm:text-4xl pt-6 font-bold ">
+        Headline Goes Here</h1>
+      <p
+      class=" flex  max-sm:w-[300px]  sm:w-[360px] max-sm:justify-center max-sm:text-center sm:justify-center  font-family: 'Poppins', sans-serif; max-sm:text-[16px] sm:text-[20px] text-[#777777] pt-8 font-medium ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non venenatis risus, in lacinia odio. Ut
+        iaculis lectus nulla, ac sollicitudin massa efficitur ac. Vestibulum dui metus, sollicitudin ac odio nec,
+        vehicula rhoncus urna.</p>
+    </div>
+  </div>
+  <div class=" max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center gap-6 lg:flex lg:justify-center lg:pt-32 lg:gap-40 xl:flex  xl:justify-center  xl:pt-32 xl:gap-40 max-lg:pt-10" >
+    <div class="lg:ml-[120px] pl:[120px]">
+      <h1
+      class="flex  max-sm:w-[300px]  sm:w-[340px] justify-center text-center font-family: 'Poppins', sans-serif;  text-[#555555] max-sm:text-3xl  sm:text-4xl pt-6 font-bold ">
+        Headline Goes Here</h1>
+      <p
+      class=" flex  max-sm:w-[300px]  sm:w-[370px] max-sm:justify-center max-sm:text-center sm:justify-center  font-family: 'Poppins', sans-serif; max-sm:text-[16px] sm:text-[20px] text-[#777777] pt-8 font-medium ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non venenatis risus, in lacinia odio. Ut
+        iaculis lectus nulla, ac sollicitudin massa efficitur ac. Vestibulum dui metus, sollicitudin ac odio nec,
+        vehicula rhoncus urna.</p>
+    </div>
+    <div >
+      <img src="Group 14 copy 4.png" alt="" class=" max-sm:w-[300px] sm:w-[450px]   ">
+      <div class=" mt-[-40px] ml-6">
+        <svg width="123" height="76" viewBox="0 0 160 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.2198 19.4529C23.2198 12.8252 20.9053 11.0367 17.2232 11.0367C13.5411 11.0367 11.2267 13.0356 11.2267 18.2957V26.1859H0.285596V19.0321C0.285596 7.2494 6.17695 0.51643 17.5389 0.51643C28.9008 0.51643 34.7921 7.2494 34.7921 19.0321C34.7921 42.1767 11.7527 50.8034 11.7527 62.9017C11.7527 63.4277 11.7527 63.9537 11.8579 64.4797H33.7401V75H0.285596V65.9526C0.285596 44.2808 23.2198 40.7039 23.2198 19.4529ZM52.6223 18.2957V58.0624C52.6223 63.3225 54.9368 65.3213 58.6189 65.3213C62.301 65.3213 64.6155 63.3225 64.6155 58.0624V18.2957C64.6155 13.0356 62.301 11.0367 58.6189 11.0367C54.9368 11.0367 52.6223 13.0356 52.6223 18.2957ZM41.05 57.3259V19.0321C41.05 7.2494 47.257 0.51643 58.6189 0.51643C69.9808 0.51643 76.1878 7.2494 76.1878 19.0321V57.3259C76.1878 69.1086 69.9808 75.8416 58.6189 75.8416C47.257 75.8416 41.05 69.1086 41.05 57.3259ZM106.642 19.4529C106.642 12.8252 104.328 11.0367 100.646 11.0367C96.9637 11.0367 94.6492 13.0356 94.6492 18.2957V26.1859H83.7081V19.0321C83.7081 7.2494 89.5995 0.51643 100.961 0.51643C112.323 0.51643 118.215 7.2494 118.215 19.0321C118.215 42.1767 95.1752 50.8034 95.1752 62.9017C95.1752 63.4277 95.1752 63.9537 95.2804 64.4797H117.163V75H83.7081V65.9526C83.7081 44.2808 106.642 40.7039 106.642 19.4529ZM136.045 18.2957V58.0624C136.045 63.3225 138.359 65.3213 142.041 65.3213C145.724 65.3213 148.038 63.3225 148.038 58.0624V18.2957C148.038 13.0356 145.724 11.0367 142.041 11.0367C138.359 11.0367 136.045 13.0356 136.045 18.2957ZM124.473 57.3259V19.0321C124.473 7.2494 130.68 0.51643 142.041 0.51643C153.403 0.51643 159.61 7.2494 159.61 19.0321V57.3259C159.61 69.1086 153.403 75.8416 142.041 75.8416C130.68 75.8416 124.473 69.1086 124.473 57.3259Z"
+            fill="#A969B7" />
+        </svg>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-black h-[500px] mt-[100px] sm:mt-[300px]" style="border-top: 8px solid #A969B7;">
+    <div class=" flex justify-center pt-24 gap-2 ">
+      <div class="group cursor-pointer">
+        <img src="Group 12.png" alt=""
+          class="w-[40px] sm:w-[70px] transition-transform transform group-hover:grayscale-100 group-hover:brightness-200">
+      </div>
+
+
+      <div class="group cursor-pointer">
+        <img src="Group 11.png" alt=""
+          class="w-[40px] sm:w-[70px] transition-transform transform group-hover:grayscale-100 group-hover:brightness-200">
+      </div>
+      <div class="group cursor-pointer">
+        <img src="Group 10.png" alt=""
+          class="w-[40px] sm:w-[70px] transition-transform transform group-hover:grayscale-100 group-hover:brightness-200">
+      </div>
+      <div class="group cursor-pointer">
+        <img src="Group 9.png" alt=""
+          class="w-[40px] sm:w-[70px] transition-transform transform group-hover:grayscale-100 group-hover:brightness-200">
+      </div>
+      <div class="group cursor-pointer">
+        <img src="Group 8.png" alt=""
+          class="w-[40px] sm:w-[70px] transition-transform transform group-hover:grayscale-100 group-hover:brightness-200">
+      </div>
+    </div>
+    <div class="flex items-center justify-center max-sm:gap-8 sm:gap-16 pt-6">
+      <p
+        class="  pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9px] sm:text-[15px] text-white leading-6 cursor-pointer">
+        PRIVACYPOLICY</p>
+      <p
+        class="  pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9px] sm:text-[15px] text-white leading-6 cursor-pointer">
+        TERMSOFUSE</p>
+      <p
+        class="  pt-4   font-family: 'Poppins',  sans-serif;  font-light text-[9px] sm:text-[15px] text-white leading-6 cursor-pointer">
+        DISCLAIMER</p>
+    </div>
+    <div class="flex items-center justify-center gap-16 ">
+      <p
+        class=" pt-4 text-center max-sm:w-[270px]  font-family: 'Poppins',  sans-serif;  max-sm:font-thin sm:font-light text-[12px] sm:text-[15px] text-white leading-6 ">
+        © 2023
+        COPYRIGHT. KARL KRUMMENACHER, LLC. ALL RIGHTS RESERVED.</p>
+    </div>
+    <div class="flex items-center justify-center gap-16 pt-10 cursor-pointer  ">
+      <svg width="75" height="64" mb-64 viewBox="0 0 75 74" fill="none"
+        xmlns="http://www.w3.org/2000/svg cursor-pointer ">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M47.7904 1e-05L47.6116 0.25712L22.892 35.8575L47.9603 72.8716L48.0248 72.9673L48.0471 73L74.9996 72.8716L55.5634 45.0935L48.5612 35.0863L55.5634 25.2188L73.4595 0L47.7904 1e-05Z"
+          fill="#315864" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 0.256836V72.8713H36.8731L11.8049 35.8572L36.5245 0.256836L0 0.256836Z" fill="#315864" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M48.025 72.9673L47.9605 72.8721L22.8925 35.8589L47.6121 0.2583L47.7912 0H73.4591L55.5645 25.2197L48.5604 35.0864L55.5645 45.0947L74.9993 72.8721L48.0476 73.0015L48.025 72.9673ZM0 72.8721V0.25829H36.5247L11.805 35.8589L36.8731 72.8721H0Z"
+          fill="#343434" />
+      </svg>
+
+    </div>
+  </div>
+</body>
+
+</html>
